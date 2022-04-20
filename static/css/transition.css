@@ -1,0 +1,15 @@
+.transition-1{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    z-index: 101;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201010/pngtree-pastel-background-for-banner-image_407969.jpg");
+    background-size: cover;
+    transition: 500ms ease-out;
+}
+
+.transition-1.is-active{
+    left: 0;
+}

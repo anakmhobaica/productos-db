@@ -1,0 +1,69 @@
+body{
+    background: #FFAFBD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .barra-bienvenida {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  .inicio{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    background-color: #f8e6e8;
+    color: #f99aaa;
+  }
+  p{
+    color: black;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+  .buttons{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  button{
+    width: 200%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-radius: 0px;
+    border: none;
+    background-color: #f99aaa;
+  }
+  
+  button:hover{
+    background-color: #ca7d8a;
+  }
+  .view-enter {
+    opacity: 0;
+  }
+  .view-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  .view-exit {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  .view-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+    transform: translateX(-100%);
+  }
